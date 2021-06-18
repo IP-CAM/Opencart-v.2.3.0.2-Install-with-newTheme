@@ -22,7 +22,8 @@ define('DIR_UPLOAD', '/var/www/egorov/data/www/opencart-2-3-0-0.egorov.t-leader.
 define('DIR_CATALOG', '/var/www/egorov/data/www/opencart-2-3-0-0.egorov.t-leader.ru/catalog/');
 
 // DB
-define('DB_DRIVER', 'mysqli');
+//define('DB_DRIVER', 'mysqli');
+define('DB_DRIVER', 'mpdo');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'maksim');
 define('DB_PASSWORD', 'Q7c5X4t6');
