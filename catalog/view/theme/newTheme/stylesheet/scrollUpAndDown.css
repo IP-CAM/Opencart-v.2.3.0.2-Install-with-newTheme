@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    color: #333333;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+a {
+    color: #548eaa;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #487284;
+}
+
+.page {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.justify {
+    text-align: justify;
+    font-weight: 400;
+    font-style: italic;
+    text-indent: 20px;
+}
+
+.article {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.layout__elevator {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 60px;
+    height: 100%;
+    color: #333;
+    text-align: center;
+    transform: translateY(0);
+    will-change: transform;
+    opacity: .8;
+}
+
+.layout__elevator:hover {
+    background: #c5c5c5;
+    color: #333;
+    opacity: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+.icon-svg {
+    display: inline-block;
+    background-color: transparent;
+    color: inherit;
+    vertical-align: middle;
+    fill: currentColor;
+    stroke: currentColor;
+    stroke-width: 0;
+    pointer-events: none;
+    position: relative;
+}
+
+.icon-svg_scroll-up {
+    position: relative;
+    top: 50%;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+.icon-svg-rev {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
