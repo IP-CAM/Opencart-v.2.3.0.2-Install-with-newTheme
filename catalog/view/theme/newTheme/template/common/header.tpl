@@ -67,6 +67,9 @@
     </div>
   </div>
 </nav>
+<div>
+    <?php echo $text_welcome; ?>
+</div>
 <header>
   <div class="container">
     <div class="row">
