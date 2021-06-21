@@ -27,6 +27,7 @@
 <link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />
 <?php } ?>
 <script src="catalog/view/javascript/common.js" type="text/javascript"></script>
+<script src="catalog/view/javascript/scrollUpAndDown.js" type="text/javascript"></script>
 <?php foreach ($links as $link) { ?>
 <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
 <?php } ?>
@@ -87,6 +88,12 @@
       <div class="col-sm-3"><?php echo $cart; ?></div>
     </div>
   </div>
+	<a href="#" class="layout__elevator hidden" id="scroll_to_top" onclick="if (typeof ga === 'function') { ga('send', 'event', 'navigation_button', 'down'); }">
+        <svg class="icon-svg icon-svg_scroll-up" id="icon-svg-rev" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true" version="1.1" role="img">
+            <path d="M16 0C7.164 0 0 7.164 0 16s7.164 16 16 16 16-7.164 16-16S24.836 0 16 0zm8.412 19.523c-.517.512-1.355.512-1.872 0L16 13.516l-6.54 6.01c-.518.51-1.356.51-1.873 0-.516-.513-.517-1.343 0-1.855l7.476-7.326c.517-.512 1.356-.512 1.873 0l7.476 7.327c.516.513.516 1.342 0 1.854z">
+            </path>
+        </svg>
+	</a>
 </header>
 <?php if ($categories) { ?>
 <div class="container">
