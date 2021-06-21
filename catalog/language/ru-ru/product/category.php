@@ -23,3 +23,5 @@ $_['text_model_asc']    = 'Модель (А - Я)';
 $_['text_model_desc']   = 'Модель (Я - А)';
 $_['text_limit']        = 'Показать:';
 
+$_['text_brand']        = 'Бренды';
+

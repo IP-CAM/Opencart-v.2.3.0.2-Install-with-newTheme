@@ -151,4 +151,7 @@
       <?php echo $content_bottom; ?></div>
     <?php echo $column_right; ?></div>
 </div>
+<div>
+    <?php echo $text_brand; ?>
+</div>
 <?php echo $footer; ?>
