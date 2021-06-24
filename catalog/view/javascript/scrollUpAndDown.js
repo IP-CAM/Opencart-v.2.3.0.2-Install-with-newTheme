@@ -14,25 +14,31 @@ document.addEventListener('DOMContentLoaded', function () {
             scrollToTopBack.classList.remove('hidden');
         }
     };
-    
-    let toBack = 0;
+	
+	window.addEventListener('scroll', function() {
+        if (pageYOffset == 0) {
+        svgRev.classList.add('icon-svg-rev');
+        } else {
+        svgRev.classList.remove('icon-svg-rev');
+        }
+    });
+	
+	let toBack;
     
     scrollToTopBack.addEventListener('click', () => {
-        if (window.pageYOffset !==0) {
+        if (pageYOffset !==0) {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
             });
-        svgRev.classList.add('icon-svg-rev');
         toBack = window.pageYOffset;
         } else {
             window.scrollTo({
                 top: toBack,
             behavior: 'smooth'
             });
-        svgRev.classList.remove('icon-svg-rev');
         }
-    });    
+    });
 });
     
     
